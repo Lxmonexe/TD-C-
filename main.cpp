@@ -4,8 +4,9 @@
 int main()
 {
     Date date(2014, 3, 1);
-    std::cout << date.getYear() << std::endl;
-    std::cout << date.getMonth() << std::endl;
-    std::cout << date.getDay() << std::endl;
+    
+    Date date2(2014, 2, 35);
+    Date date3(-5, 2, 29);
+    Date date4(2014, 18, 29);
     return 0;
 }
