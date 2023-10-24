@@ -1,19 +1,17 @@
 #include <iostream>
 #include <string>
-#include "date.h"
-#include "bankaccount.h"
+#include "user.h"
 
 int main()
 {
-    Date date(2020, 2, 29);
-    std::cout << date.getYear() << std::endl;
+    Date birthdate(2000, 1, 1);
     Bankaccount bankaccount("123456789", "123456789", "VISA", 1000);
-    std::cout << bankaccount.get_balance() << std::endl;
-    Bankaccount bankaccount2(100, "123456789", "123456789", "VISA", 1000);
-    std::cout << bankaccount2.get_balance() << std::endl;
-    bankaccount2.deposit(100);
-    std::cout << bankaccount2.get_balance() << std::endl;
-    bankaccount2.withdraw(100);
-    std::cout << bankaccount2.get_balance() << std::endl;
+    User user("John", "Doe", bankaccount, birthdate);
+    std::cout << user.getName() << std::endl;
+    std::cout << user.getSurname() << std::endl;
+    std::cout << user.getBirthdate().getYear() << std::endl;
+    std::cout << user.getBirthdate().getMonth() << std::endl;
+    std::cout << user.getBirthdate().getDay() << std::endl;
+    std::cout << user.getBankaccountNumber() << std::endl;
     return 0;
 }

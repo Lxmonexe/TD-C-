@@ -1,5 +1,5 @@
 #include "bankaccount.h"
-#include <string>
+
 
 Bankaccount::Bankaccount(std::string account_number, std::string card_number, std::string card_type, double balance_max)
 {
@@ -29,27 +29,27 @@ void Bankaccount::withdraw(double amount)
     _balance -= amount;
 }
 
-double Bankaccount::get_balance() const
+double Bankaccount::getBalance() const
 {
     return _balance;
 }
 
-std::string Bankaccount::get_account_number() const
+std::string Bankaccount::getAccountNumber() const
 {
     return _account_number;
 }
 
-std::string Bankaccount::get_card_number() const
+std::string Bankaccount::getCardNumber() const
 {
     return _card_number;
 }
 
-std::string Bankaccount::get_card_type() const
+std::string Bankaccount::getCardType() const
 {
     return _card_type;
 }
 
-double Bankaccount::get_balance_max() const
+double Bankaccount::getBalanceMax() const
 {
     return _balance_max;
 }
