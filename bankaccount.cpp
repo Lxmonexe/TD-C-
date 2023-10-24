@@ -1,5 +1,5 @@
 #include "bankaccount.h"
-
+#include <iostream>
 
 Bankaccount::Bankaccount(std::string account_number, std::string card_number, std::string card_type, double balance_max)
 {
@@ -21,7 +21,14 @@ Bankaccount::Bankaccount(double balance, std::string account_number, std::string
 
 void Bankaccount::deposit(double amount)
 {
-    _balance += amount;
+    if((_balance += amount)>_balance_max)
+    {
+        std::cout << "Balance max exceeded, your balance max is : " << _balance_max << std::endl;
+    }
+    else
+    {
+        _balance += amount;
+    }
 }
 
 void Bankaccount::withdraw(double amount)
