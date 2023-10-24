@@ -13,6 +13,8 @@ int main()
     std::cout << user.getBirthdate().getMonth() << std::endl;
     std::cout << user.getBirthdate().getDay() << std::endl;
     std::cout << user.getBankaccountNumber() << std::endl;
-    bankaccount.deposit(2000);
+    user.deposit("123456789", 100);
+    user.deposit("12345678", 100);
+    user.deposit("123456789", 10000);
     return 0;
 }

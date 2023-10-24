@@ -10,6 +10,7 @@ class User
     std::string getSurname() const;
     Date getBirthdate() const;
     std::string getBankaccountNumber() const;
+    void deposit(std::string account_number, double amount);
     private :
     std::string _name;
     std::string _surname;
