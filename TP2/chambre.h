@@ -13,5 +13,6 @@ class Chambre{
         int getNumero();
         std::string getType();
         int getPrix();
+        void changerPrix(int prix);
         
 };

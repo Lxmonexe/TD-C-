@@ -33,4 +33,6 @@ int Chambre::getPrix()
     return _prix;
 }
 
-
+void Chambre::changerPrix(int prix){
+    _prix=prix;
+}
