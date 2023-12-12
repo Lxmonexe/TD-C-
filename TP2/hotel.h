@@ -18,5 +18,6 @@ class Hotel{
         void SupprimerChambre(int numero);
         int getPrixChambre(int numero);
         std::string getTypeChambre(int numero);
+        std::string getIdentifiant();
 
 };

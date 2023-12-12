@@ -73,3 +73,7 @@ std::string Hotel::getTypeChambre(int numero)
     return "Unknown";
 }
 
+std::string Hotel::getIdentifiant()
+{
+    return _identifiant;
+}
