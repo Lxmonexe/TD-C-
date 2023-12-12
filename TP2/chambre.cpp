@@ -1,8 +1,22 @@
 #include "chambre.h"
 
-Chambre::Chambre(int numero, TypeChambre type, int prix)
-    : _numero(numero), _type(type), _prix(prix)
+Chambre::Chambre(int numero, TypeChambre type)
+    : _numero(numero), _type(type)
 {
+    switch (_type)
+    {
+    case TypeChambre::Single:
+        _prix = 100;
+        break;
+    case TypeChambre::Double:
+        _prix = 125;
+        break;
+    case TypeChambre::Suite:
+        _prix = 200;
+        break;
+    default:
+        break;
+    }
 }
 
 
@@ -18,10 +32,13 @@ std::string Chambre::getType()
     {
         case TypeChambre::Single:
             return "Single";
+            break;
         case TypeChambre::Double:
             return "Double";
+            break;
         case TypeChambre::Suite:
             return "Suite";
+            break;
         default:
             return "Unknown";
     }

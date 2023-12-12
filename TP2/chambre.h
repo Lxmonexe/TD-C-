@@ -9,7 +9,7 @@ class Chambre{
         TypeChambre _type;
         int _prix;
     public:
-        Chambre(int numero, TypeChambre type, int prix);
+        Chambre(int numero, TypeChambre type);
         int getNumero();
         std::string getType();
         int getPrix();
