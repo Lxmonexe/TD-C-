@@ -9,3 +9,13 @@ std::string Client::getIdentifiant()
 {
     return _identifiant;
 }
+
+std::string Client::getNom()
+{
+    return _nom;
+}
+
+std::string Client::getPrenom()
+{
+    return _prenom;
+}

@@ -9,4 +9,6 @@ class Client{
     public:
         Client(std::string nom, std::string prenom, std::string identifiant);
         std::string getIdentifiant();
+        std::string getNom();
+        std::string getPrenom();
 };
