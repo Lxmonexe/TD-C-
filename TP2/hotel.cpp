@@ -23,7 +23,7 @@ std::string Hotel::getIdentifiant()
     return _identifiant;
 }
 
-void Hotel::AjouterChambre(Chambre chambre)
+void Hotel::ajouterChambre(Chambre chambre)
 {
     for (int i = 0; i < _chambres.size(); i++)
     {
@@ -37,7 +37,7 @@ void Hotel::AjouterChambre(Chambre chambre)
 
 }
 
-void Hotel::SupprimerChambre(int numero)
+void Hotel::supprimerChambre(int numero)
 {
     for (int i = 0; i < _chambres.size(); i++)
     {
@@ -73,7 +73,3 @@ std::string Hotel::getTypeChambre(int numero)
     return "Unknown";
 }
 
-std::string Hotel::getIdentifiant()
-{
-    return _identifiant;
-}

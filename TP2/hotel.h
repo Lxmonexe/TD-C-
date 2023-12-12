@@ -14,10 +14,10 @@ class Hotel{
         std::string getNom();
         std::string getVille();
         std::string getIdentifiant();
-        void AjouterChambre(Chambre chambre);
-        void SupprimerChambre(int numero);
+        void ajouterChambre(Chambre chambre);
+        void supprimerChambre(int numero);
         int getPrixChambre(int numero);
         std::string getTypeChambre(int numero);
-        std::string getIdentifiant();
+        
 
 };

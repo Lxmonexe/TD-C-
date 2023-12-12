@@ -11,4 +11,7 @@ public:
     Date(int year=1, int month=1, int day=1);
     void validDate();
     void afficher();
+    int getYear();
+    int getMonth();
+    int getDay();
 };

@@ -52,3 +52,18 @@ void Date::afficher()
 {
     std::cout << _year << "/" << _month << "/" << _day << std::endl;
 }
+
+int Date::getYear()
+{
+    return _year;
+}
+
+int Date::getMonth()
+{
+    return _month;
+}
+
+int Date::getDay()
+{
+    return _day;
+}
