@@ -10,6 +10,7 @@ class Produit{
         int _quantite;
     public:
         Produit(std::string titre, std::string description, float prix, int quantite);
+        Produit(const Produit& p);
         std::string getTitre(){return _titre;}
         std::string getDescription(){return _description;}
         float getPrix(){return _prix;}
