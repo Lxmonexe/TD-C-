@@ -14,7 +14,8 @@ class Client{
         std::string getIdentifiant(){return _identifiant;}
         void ajouterProduit(Produit p);
         void supprimerPanier();
-        void changerQuantite(std::string titre, int quantite);
+        void setQuantite(std::string titre, int quantite);
         void supprimerProduit(std::string titre);
+        int getNbProduits(){return _panier.size();}
         friend std::ostream& operator<<(std::ostream& os, const Client& c);
 };
