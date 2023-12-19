@@ -4,8 +4,8 @@
 
 class Produit{
     private:
-        const std::string _titre;
-        const std::string _description;
+        std::string _titre;
+        std::string _description;
         float _prix;
         int _quantite;
     public:
